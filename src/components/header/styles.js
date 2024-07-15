@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 
 export const Container = styled.header`
   grid-area: header;
@@ -18,7 +20,7 @@ export const Container = styled.header`
   /* background: red; */
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
   display: flex;
   align-items: center;
 
@@ -36,7 +38,7 @@ export const Profile = styled.div`
 
     span{
       font-size: 16px;
-      color: ${({theme}) => theme.COLORS.BACKGROUND_100};
+      color: ${({theme}) => theme.COLORS.GRAY_100};
     }
 
     strong{
